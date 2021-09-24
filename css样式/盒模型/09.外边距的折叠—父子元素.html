@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1 , .box2{
+            width: 200px;
+            height: 200px;
+            font-size: 100px;
+        }
+
+        /*
+                - 父子元素
+                    - 父子元素间相邻外边距，子元素的会传递给父元素（上外边距）
+                    - 父子外边距的折叠会影响到页面的布局，必须要进行处理
+         */
+
+
+
+        .box3{
+            width: 200px;
+            height: 100px;
+            background-color: #bfa;
+            padding-top: 100px;
+            /* border-top: 1px #bfa solid; */
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /*margin-top: 100px;*/
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+
+</body>
+</html>
